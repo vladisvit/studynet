@@ -1,0 +1,12 @@
+abstract
+async
+const
+event
+extern
+in (generic modifier)
+new (member modifier)
+out (generic modifier)
+override
+readonly
+sealed
+static
