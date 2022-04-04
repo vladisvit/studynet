@@ -1,14 +1,20 @@
 abstract - The abstract modifier indicates that the thing being modified has a missing or incomplete implementation. 
 as - The as operator explicitly converts the result of an expression to a given reference or nullable value type. If the conversion isn't possible, the as operator returns null. Unlike a cast expression, the as operator never throws an exception.
-base
-bool
-break
-byte
-case
-catch
-char
-checked
-class
+base - The base keyword is used to access members of the base class from within a derived class
+bool - The bool type keyword is an alias for the .NET System.Boolean structure type that represents a Boolean value, which can be either true or false.
+break - The break statement terminates the closest enclosing iteration statement (that is, for, foreach, while, or do loop) or switch statement. The break statement transfers control to the statement that follows the terminated statement, if any.
+byte - The integral numeric types represent integer numbers. All integral numeric types are value types. They are also simple types and can be initialized with literals. 
+case - The case statement using in switch statement, like this:
+    switch (measurement)
+    {
+        case < 0.0:
+		  Console.WriteLine("below zero");
+		  break;
+	}
+catch - he try-catch statement consists of a try block followed by one or more catch clauses, which specify handlers for different exceptions.
+char - The char type keyword is an alias for the .NET System.Char structure type that represents a Unicode UTF-16 character.
+checked - The checked keyword is used to explicitly enable overflow checking for integral-type arithmetic operations and conversions.
+class - Classes are declared using the keyword class
 const
 continue
 decimal
