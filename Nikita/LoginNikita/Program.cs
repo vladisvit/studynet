@@ -22,6 +22,14 @@ namespace LoginProgram
             user.Userpass = userPassword ?? string.Empty;
             Thread.Sleep(1000);
             Console.Clear();
+            //--NEW TIMER-- (NOT DONE)
+            //await Task.Run(() =>
+            //{
+            //    int loop = 0;
+            //     for (loop = 0; loop <= 1000; loop++);
+            //     { }
+            //     Console.WriteLine("PLEASE WAIT{0}", loop);
+            // });
 
             //--OLD TIMER--
             // static void TimerCallback(Object o) => Console.Write(".");
