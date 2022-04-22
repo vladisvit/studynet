@@ -65,6 +65,10 @@ interface IMovingHero
     public int Velocity { get; set; }
     int UpSpeed();
     int DownSpeed();
+    public int MovePosition { get; set; }
+    int MoveRight();
+    int MoveLeft();
+
 }
 class HeroClass : IPropertiesHero, IMovingHero
 {
@@ -96,6 +100,7 @@ class HeroClass : IPropertiesHero, IMovingHero
     {
         return --MovePosition;
     }
+
 }
 class MainClass
 {
@@ -123,10 +128,26 @@ class MainClass
                     break;
                 case ConsoleKey.RightArrow:
                     hero.MoveRight();
-                    break;
+                    if (hero.MovePosition != 4)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        hero.MoveLeft();
+                        break;
+                    }
                 case ConsoleKey.LeftArrow:
                     hero.MoveLeft();
-                    break;
+                    if (hero.MovePosition != -1)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        hero.MoveRight();
+                        break;
+                    }
                 default:
                     break;
             }
